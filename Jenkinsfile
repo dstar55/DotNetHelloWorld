@@ -32,7 +32,7 @@ pipeline {
   
   stage('Pack') {
    steps {
-    bat 'dotnet pack --no-build --output nupkgs'
+    bat 'dotnet pack --output nupkgs'
    }
   }/*
   stage('Publish') {
