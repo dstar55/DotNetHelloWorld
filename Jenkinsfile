@@ -34,11 +34,11 @@ pipeline {
    steps {
     bat 'dotnet pack --output nupkgs'
    }
-  }/*
+  }
   stage('Publish') {
    steps {
-    bat "dotnet nuget push **\\nupkgs\\*.nupkg -k yourApiKey -s            http://myserver/artifactory/api/nuget/nuget-internal-stable/com/sample"
+    bat "dotnet nuget push nupkgs\DotNetHelloWorld.1.0.0.nupkg -k ae981cb7-9a02-37da-ba61-83806de296d2 -s http://localhost:8081/repository/nuget-hosted"
    }
-  }*/
-    }
+  }
+ }
 }
