@@ -37,7 +37,7 @@ pipeline {
   }
   stage('Publish') {
    steps {
-    bat "dotnet nuget push nupkgs\DotNetHelloWorld.1.0.0.nupkg -k ae981cb7-9a02-37da-ba61-83806de296d2 -s http://localhost:8081/repository/nuget-hosted"
+    bat 'dotnet nuget push nupkgs\DotNetHelloWorld.1.0.0.nupkg -k ae981cb7-9a02-37da-ba61-83806de296d2 -s http://localhost:8081/repository/nuget-hosted'
    }
   }
  }
