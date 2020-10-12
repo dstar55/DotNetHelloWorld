@@ -35,10 +35,11 @@ pipeline {
     bat 'dotnet pack --output nupkgs'
    }
   }
+  /*
   stage('Publish') {
    steps {
     bat 'dotnet nuget push nupkgs\\DotNetHelloWorld.1.0.0.nupkg -k 8623ee99-8cc5-30ce-9437-0964aee3eb1f -s http://localhost:8081/repository/nuget-hosted'
    }
-  }
+  }*/
  }
 }
